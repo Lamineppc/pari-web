@@ -32,10 +32,9 @@ header {
 }
 
 .logo {
-  width: 72px;
   height: 72px;
-  border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(15, 181, 159, 0.25);
+  width: auto;
+  max-width: 240px;
 }
 
 h1 {
@@ -141,6 +140,20 @@ footer a:hover { text-decoration: underline; }
   opacity: 0.7;
   margin-top: 8px;
 }
+
+.doc { max-width: 720px; }
+.doc h1 { font-size: 28px; margin: 12px 0 4px; }
+.doc h2 {
+  font-size: 18px;
+  margin: 28px 0 8px;
+  color: var(--teal-dark);
+}
+.doc p, .doc li { font-size: 15px; color: var(--text); }
+.doc ul { padding-left: 20px; }
+.doc .muted { color: var(--muted); font-size: 13px; margin-top: 0; }
+.doc .back { margin: 0 0 20px; }
+.doc .back a { color: var(--teal-dark); text-decoration: none; font-size: 14px; }
+.doc a { color: var(--teal-dark); }
 
 @media (min-width: 640px) {
   .ctas { flex-direction: row; }
