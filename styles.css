@@ -158,5 +158,9 @@ footer a:hover { text-decoration: underline; }
 @media (min-width: 640px) {
   .ctas { flex-direction: row; }
   .ctas .btn { flex: 1; }
-  .features { grid-template-columns: repeat(3, 1fr); }
+  .features { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 960px) {
+  .features { grid-template-columns: repeat(4, 1fr); }
 }
